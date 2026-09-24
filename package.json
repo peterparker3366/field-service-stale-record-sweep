@@ -1,0 +1,20 @@
+{
+  "name": "field-service-stale-record-sweep",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/field_service_cleanup.ts",
+    "schedule": "tsx src/register_cleanup_schedule.ts",
+    "test": "tsx --test test/stale_work_orders.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "@types/node": "^24.3.0"
+  }
+}
